@@ -1,33 +1,23 @@
-const fs = require('fs');
-const readline = require('readline');
+const ObjArr = require("./../utilities/csv_to_objArr.js")
 
 const Transit_routes = {
 
   all: function(req,res) {
-    console.log(" 📈GET /routes 📉 ")
+    console.log(" 📈 GET /routes 📉 ")
 
-    var contents = fs.readFileSync('./data/routes.txt', 'utf8').split('\n'); // blocking: pass callback for non-blocking
-    const keys = contents[0].split('\r')[0].split(',')
-    contents.shift()
-
-    const object = contents.map( route => {
-      const route_info = route.split('\r')[0].split(",")
-      let routeObj = {}
-      keys.forEach( (key, i) => routeObj[key] = route_info[i] )
-      return routeObj
-    })
-
-    if (!object[object.length-1].route_id) object.pop()
+    const objArr = ObjArr("./data/routes.txt")
 
     res.json({
+      "message": " 📈 The routes array below contains all the transit routes available.",
       "api_request": "GET /routes",
-      "total_routes": object.length,
-      "routes": object
+      "rootUrl": "http://"+req.headers.host,
+      "total_routes": objArr.length,
+      "routes": objArr
     })
   },
 
   testy: function(req,res) {
-    console.log(" GET /routes/testy ")
+    console.log(" GET /routes/testy ", req.params.x)
     res.json({ "routes": " GET 🧪👨‍🔬 testy routes 👩‍🔬🧪 "})
   }
 }
