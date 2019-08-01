@@ -2,7 +2,7 @@ const ObjArr = require("./../utilities/csv_to_objArr.js")
 
 const Transit_routes = {
 
-  all: function(req,res) {
+  all: function(req, res) {
     console.log(" 📈 GET /routes 📉 ")
 
     const objArr = ObjArr("./data/routes.txt")
@@ -14,6 +14,7 @@ const Transit_routes = {
       "total_routes": objArr.length,
       "routes": objArr
     })
+
   },
 
   testy: function(req,res) {

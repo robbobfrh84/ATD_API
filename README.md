@@ -30,25 +30,28 @@ Why build this?
 ### Ordered Development Steps:
 
 Initial code-base Setup:
-
 - [x] Create repository (ATD_API)
 - [x] Clone local development version
 - [x] Initialize npm package.json: $`npm init`
 - [x] Add express: $`npm install express --save-dev`
-- [ ] Build and test express place-holder `/` root page.
-- [ ] Build and test API routes to `controller` folder.
+- [x] Build and test express place-holder `/` root page.
+- [x] Build and test API routes to `controller` folder.
 
-Feature - routes:
-- [x] List the available routes.
-  - [x] Add `data` folder
-  - [x] Create data parser method to convert csv to javaScript Object
+Feature - routes: List the available routes.
+- [x] Add `data` folder
+- [x] Create data parser method to convert csv to javaScript Object
 
-Feature - trips:
-- [ ] List of trips for a specified route
-  - [ ] Make Data Parser a shared method.
+Feature - trips: List of trips for a specified route
+- [x] Make Data Parser a shared method.
+- [x] Add info and example to root API
 
-Feature - stops:
-- [ ] List the available routes.
+Feature - stops: A list of stops for a specified trip and direction
+- [x] Add info and example to root API
+
+Feature - embed urls:
+- [ ] Add see all trips to all route objects in `/route`
+- [ ] Add see all stops for each direction in trips objects in `/route` 
+
 
 ### Next Steps:
 
@@ -64,6 +67,7 @@ Updates:
 Enhanced Features:
 - [ ] List the routes that stop near a location. Specify the location using latitude and longitude. You can fetch this data by querying stops.txt, stop_times.txt, and trips.txt
 - [ ] List the next five trips arriving at a particular stop. Specify the stop_id and time. You can fetch this data by querying stops.txt, stop_times.txt, and trips.txt.
+- [ ] Refactor how .txt files are quired to generate object by reading line-by-line instead of reading the entire file first. * See resources
 
 ### Resources
 
