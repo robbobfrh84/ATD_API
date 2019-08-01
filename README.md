@@ -13,6 +13,8 @@ Then, open a browser to see API responses to the following urls:
   - Example: `http://localhost:3000/trips/3`
 - `http://localhost:3000/stops/<trip>/<direction>`: A list of stops for a specified trip and direction.
 
+🔴 LIVE example hosted with Google App Engine: https://atd-api.appspot.com/
+
 ----
 
 # Developer Notes
@@ -55,8 +57,11 @@ Feature - embed urls:
 
 ### Next Steps:
 
+Refactor:
+- [ ] .txt files are queried to generate object by reading line-by-line instead of reading the entire file first. * See resources for much more efficient way of doing this.
+
 Live deploy:
-- [ ] Use GCP to host a live testable API.
+- [x] Use GCP to host a live testable API.
 
 Tests:
 - [ ] "Does each routes query return more than 1 route?"
@@ -67,7 +72,6 @@ Updates:
 Enhanced Features:
 - [ ] List the routes that stop near a location. Specify the location using latitude and longitude. You can fetch this data by querying stops.txt, stop_times.txt, and trips.txt
 - [ ] List the next five trips arriving at a particular stop. Specify the stop_id and time. You can fetch this data by querying stops.txt, stop_times.txt, and trips.txt.
-- [ ] Refactor how .txt files are quired to generate object by reading line-by-line instead of reading the entire file first. * See resources
 
 ### Resources
 
