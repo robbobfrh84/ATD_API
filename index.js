@@ -6,6 +6,7 @@ const Transit_routes = require("./controller/transit_routes.js")
 const Transit_trips = require("./controller/transit_trips.js")
 const Transit_stops = require("./controller/transit_stops.js")
 
+// URL root with examples
 app.get("/", (req,res) => {
   console.log(" GET / ")
   res.json({
@@ -15,7 +16,7 @@ app.get("/", (req,res) => {
     trips_info: " 🚎 To see a list of all the trips of a specific route, add /routes/<route> to the url.",
     trips_example: "http://"+req.headers.host+"/trips/3",
     stops_info: " 🛑 To see a list of all stops of a specific trip and directions, add /stops/<trip>/<direction> to the url",
-    stops_example: "http://"+req.headers.host+"/stops/2035691/1",
+    stops_example: "http://"+req.headers.host+"/stops/2035691/S",
   })
 })
 

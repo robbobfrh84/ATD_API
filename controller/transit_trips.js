@@ -6,9 +6,11 @@ const Transit_trips = {
     console.log(" 🚎 GET /trips/"+req.params.route+" 🚎 ")
 
     const objArr = ObjArr("./data/trips.txt")
+    const url = "http://"+req.headers.host
 
     const filtered_objArr = objArr.filter( trip => {
       if (trip.route_id === req.params.route) {
+        trip.stops = url+"/stops/"+trip.trip_id+"/"+trip.dir_abbr
         return trip
       }
     })
