@@ -7,11 +7,12 @@ To run this service locally, clone the following repository and run the followin
 - $`node index.js`
 
 Then, open a browser to see API responses to the following urls:
-- `http://localhost:3000/`: basic API information.  
-- `http://localhost:3000/routes`: A list of all transit routes.
+- http://localhost:3000/: basic API information with examples.  
+- http://localhost:3000/routes: A list of all transit routes.
 - `http://localhost:3000/trips/<route>`: A list of trips for a specified route.
-  - Example: `http://localhost:3000/trips/3`
+  - Example: http://localhost:3000/trips/3
 - `http://localhost:3000/stops/<trip>/<direction>`: A list of stops for a specified trip and direction.
+  - Example: http://localhost:3000/stops/2035691/S
 
 🔴 LIVE example hosted with Google App Engine: https://atd-api.appspot.com/
 
