@@ -1,0 +1,22 @@
+{
+  "name": "austin_transit_department_api",
+  "version": "1.0.0",
+  "description": "# Developer Notes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robbobfrh84/ATD_API.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robbobfrh84/ATD_API/issues"
+  },
+  "homepage": "https://github.com/robbobfrh84/ATD_API#readme",
+  "devDependencies": {
+    "express": "^4.17.1"
+  }
+}
