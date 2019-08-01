@@ -49,8 +49,8 @@ Feature - stops: A list of stops for a specified trip and direction
 - [x] Add info and example to root API
 
 Feature - embed urls:
-- [ ] Add see all trips to all route objects in `/route`
-- [ ] Add see all stops for each direction in trips objects in `/route` 
+- [x] Add see all trips to all route objects in `/route`
+- [x] Add see all stops for each direction in trips objects in `/route`
 
 
 ### Next Steps:

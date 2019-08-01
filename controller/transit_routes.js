@@ -6,6 +6,9 @@ const Transit_routes = {
     console.log(" 📈 GET /routes 📉 ")
 
     const objArr = ObjArr("./data/routes.txt")
+    const url = "http://"+req.headers.host+"/trips/"
+
+    objArr.map( obj => obj.trips = url+obj.route_id )
 
     res.json({
       "message": " 📈 The routes array below contains all the transit routes available.",
