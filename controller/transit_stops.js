@@ -5,7 +5,7 @@ const Transit_stops = {
   trip: function(req,res) {
     console.log(" 🛑 GET /stops/"+req.params.trip+"/"+req.params.direction+" 🛑 ")
 
-    ObjArr("./data/trips.txt")
+    ObjArr("./data/stop_times.txt")
       .then( data => {
 
         const filtered_data = data.filter( trip => {
