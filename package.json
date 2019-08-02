@@ -21,6 +21,7 @@
     "express": "^4.17.1"
   },
   "dependencies": {
+    "csv-parser": "^2.3.0",
     "express": "^4.16.3"
   }
 }

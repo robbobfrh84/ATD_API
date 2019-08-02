@@ -59,7 +59,7 @@ Feature - embed urls:
 ### Next Steps:
 
 Refactor:
-- [ ] .txt files are queried to generate object by reading line-by-line instead of reading the entire file first. * See resources for much more efficient way of doing this.
+- [x] .txt files are queried to generate object by reading line-by-line instead of reading the entire file first. * See resources for much more efficient way of doing this.
 
 Live deploy:
 - [x] Use GCP to host a live testable API.
