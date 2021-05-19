@@ -14,8 +14,6 @@ Then, open a browser to see API responses to the following urls:
 - `http://localhost:3000/stops/<trip>/<direction>`: A list of stops for a specified trip and direction.
   - Example: http://localhost:3000/stops/2035691/S
 
-🔴 LIVE example hosted with Google App Engine: https://atd-api.appspot.com/
-
 ----
 
 # Developer Notes
