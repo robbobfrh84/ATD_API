@@ -20,6 +20,8 @@ Then, open a browser to see API responses to the following urls:
 
 Here is a rough outline of the development process I went about when building this application. I first outlined what I wanted to build and wrote out the rough ordered steps to completion.
 
+
+
 ### Outline
 
 What is being built?
